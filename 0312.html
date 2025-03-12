@@ -5,10 +5,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>제이쿼리</title>
+    <script src="./Asset/jquery.js"></script>
+    <script src="./js/0312.js" defer></script>
 </head>
 
 <body>
-
+    <h2 id="tit1">ㅎㅇ</h2>
+    <br>
+    <h2 id="tit2">id 선택</h2>
+    <br>
+    <h2 id="tit3">css 체이닝 기법</h2>
+    <br>
+    <h2 class="tit4">클래스 선택</h2>
+    <br>
+    <h1 id="tit5">"id, 요소" 동시 선택</h1>
+    <br>
+    <h2 id="tit6">"요소.클래스 or #id"종속 선택</h2>
+    <br>
+    <h3>부모($().parent()) 선택</h3>
+    <ul id="wrap">
+        <li>리스트1
+            <ul>
+                <li id="list_1">리스트1-1</li>
+                <li>리스트1-2</li>
+            </ul>
+        </li>
+        <li>리스트2</li>
+        <li>리스트3</li>
+    </ul>
+    <br>
+    <div id="wrap1">
+        <h2>(#wrap1 h2)하위 요소 선택</h2>
+        <p>내용</p>
+        <section>
+            <h2>(#wrap1 h2)모든 하위 요소 선택2</h2>
+            <p>내용</p>
+        </section>
+    </div>
+    <br>
+    <div id="wrap2">
+        <h2>인접(h2) 요소 선택</h2>
+        <p>내용</p>
+        <section>
+            <h2>자식(section안에 있는 태그) 요소 선택</h2>
+            <p>내용</p>
+        </section>
+    </div>
+    <br>
+    <div id="wrap3">
+        <h2>인접 관계 선택자</h2>
+        <p>.prev()</p>
+        <p class="txt">txt</p>
+        <p>txt + p</p>
+        <p>.next().next()</p>
+    </div>
+    <br>
+    <div id="wrap4">
+        <h2>prevALL()</h2>
+        <p>prevALL()</p>
+        <p class="txt2">txt2</p>
+        <p>nextALL()</p>
+        <p>nextALL()</p>
+    </div>
+    <br>
+    <div id="wrap5">
+        <h2>모든 형제 선택</h2>
+        <p>siblings()</p>
+        <p class="txt3">txt3</p>
+        <p>siblings()</p>
+        <p>siblings()</p>
+    </div>
+    <div id="wrap6">
+        <h2 class="title">prevUntill(".title")</h2>
+        <p>prev()</p>
+        <p class="txt4">txt4</p>
+        <p>next()</p>
+        <p class="txt5">nextUntill(".txt5")</p>
+    </div>
+    <br>
+    <h2 class="title2">부모 전체 선택 parents()</h2>
+    <section>
+        <div>
+            <p class="txt6">부모요소 중 요소 선택 parents("section")</p>
+        </div>
+    </section>
+    <section>
+        <div>
+            <p class="txt7">부모요소 중 요소 선택 parents("div")</p>
+        </div>
+    </section>
+    <br>
+    <h2>closest() 가장 가까운 상위요소 선택</h2>
+    <div>
+        <div>
+            <p class="txt8">("요소선택").closest("요소선택필수")</p>
+        </div>
+    </div>
+    <br>
+    <h2>탐색 선택자</h2>
+    <ul id="menu1">
+        <li>내용1-1</li>
+        <li>내용1-2</li>
+        <li>내용1-3</li>
+    </ul>
 </body>
 
 </html>
